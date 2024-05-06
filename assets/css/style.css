@@ -2,14 +2,41 @@
     padding: 5px;
 }
 
+/* Header Area */
 header {
     background-color: pink;
 }
 
+/* Main Content Area */
 main {
     background-color: blueviolet;
 }
 
+/* footer Area */
 footer {
     background-color: aquamarine;
+}
+
+#socials {
+    /* Remove bullet points */
+    list-style-type: none;
+    display: flex;
+    padding: 20px 5px;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 180%;
+}
+
+#socials a {
+    /* remove underline */
+    text-decoration: none;
+    color: black;
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* enable hover action on desktop size and above only */
+    #socials a:hover {
+        color: white;
+    }
 }
