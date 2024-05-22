@@ -1,15 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 * {
-    padding: 5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+
+
+.hidden-heading {
+    display: none;
+}
+
 
 /* Header Area */
 header {
     background-color: pink;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#menu-show:checked~nav {
+    display: block;
+}
+
+#menu-show {
+    display: none;
+}
+
+.menu-show-label {
+    font-size: 2rem;
+}
+
 
 /* Main Content Area */
 main {
     background-color: blueviolet;
+    
 }
 
 /* footer Area */
