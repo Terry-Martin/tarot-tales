@@ -142,6 +142,16 @@ main {
     opacity: .97;
   }
 
+  /* Cards page */
+#card-images img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#card-images {
+    line-height: 0;
+}
+
 /* footer Area */
 footer {
     background-color: aquamarine;
