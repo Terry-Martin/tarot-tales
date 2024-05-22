@@ -7,12 +7,19 @@
     box-sizing: border-box;
 }
 
-
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
 
 .hidden-heading {
     display: none;
 }
-
 
 /* Header Area */
 header {
@@ -34,12 +41,11 @@ header a {
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -75,9 +81,66 @@ nav {
 
 /* Main Content Area */
 main {
-    background-color: blueviolet;
-    
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 144px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+
 }
+
+
+.welcome-message {
+    grid-area: main-left;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcome-message p {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 9px;
+  }
+
+  /* index main image */
+  .info-message {
+    grid-area: main-right;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-message img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-message-text {
+    position: relative;
+  }
+  
+  .info-message-text-detail {
+    /*https://www.w3schools.com/howto/howto_css_image_text.asp*/
+  
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    display: table;
+    margin: 15px auto 0px auto;
+    padding: 20px;
+    background-color: #301934;
+    color: #F0FFF0;
+    opacity: .97;
+  }
 
 /* footer Area */
 footer {
@@ -102,6 +165,7 @@ footer {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
     /* enable hover action on desktop size and above only */
     #socials a:hover {
         color: white;
