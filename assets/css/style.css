@@ -144,7 +144,7 @@ main {
 
   /* Cards page */
 #card-images img {
-    width: 100%;
+    /* width: 100%; */
     line-height: 1em;
 }
 
