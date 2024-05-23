@@ -17,9 +17,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.hidden-heading {
-    display: none;
-}
 
 /* Header Area */
 header {
@@ -54,6 +51,8 @@ header a {
 }
 
 /* Navbar styles with dropdown toggle */
+/* https://terrymartin-loverunning-6h33634hqe3.ws-eu114.gitpod.io/ */
+
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -93,7 +92,7 @@ main {
 
 
 .welcome-message {
-    grid-area: main-left;
+
     align-items: center;
     width: 100%;
     height: auto;
@@ -110,7 +109,6 @@ main {
 
 /* index main image */
 .info-message {
-    grid-area: main-right;
     align-items: center;
     width: 100%;
     height: auto;
@@ -167,7 +165,7 @@ main {
     margin: 0 auto;
     padding: 5px;
     padding-left: 15px;
-    
+
 }
 
 
@@ -263,19 +261,44 @@ footer {
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    #index-image{      
-        content:url("/assets/images/desktop-tarot.jpeg");
-    } 
+
+    main {
+        max-height: 300px;
+    }
+
+    #index-image {
+        content: url("/assets/images/desktop-tarot.jpeg");
+        max-height: 900px;
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
-    #index-image{      
-        content:url("/assets/images/tablet-tarot.jpeg");
-    } 
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
+    #menu {
+        display: flex;
+    }
 
+    #menu > li {
+        padding-left: 1rem;
+        font-size: 24px;
+    }
+
+    .menu-show-label {
+        display: none;
+    }
+    
+      #index-image {
+        content: url("/assets/images/tablet-tarot.jpeg");
+    }
 
 }
