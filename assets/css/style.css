@@ -262,9 +262,6 @@ footer {
 @media only screen and (min-width: 600px) {
     /* For tablets: */
 
-    main {
-        max-height: 300px;
-    }
 
     #index-image {
         content: url("/assets/images/desktop-tarot.jpeg");
