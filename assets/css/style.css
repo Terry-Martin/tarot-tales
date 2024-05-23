@@ -263,10 +263,19 @@ footer {
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
+    #index-image{      
+        content:url("/assets/images/desktop-tarot.jpeg");
+    } 
 
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    
+
+    #index-image{      
+        content:url("/assets/images/tablet-tarot.jpeg");
+    } 
+
+
+
 }
