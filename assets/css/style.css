@@ -155,12 +155,21 @@ main {
 
 /* Booking page */
 
+/* 
+#booking-form {
+    background-image: url("/assets/images/booking-background.jpeg");
+    background-color: #cccccc;
+
+} */
+
 .elem-group {
     width: 300px;
     margin: 0 auto;
     padding: 5px;
     padding-left: 15px;
-  }
+    
+}
+
 
 div.elem-group {
     margin: 20px 0;

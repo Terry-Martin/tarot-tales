@@ -1,112 +1,261 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Terry-Martin,
+# TakeOver
+(Developer: Terry Martin)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+[Live webpage](https://takeover-terry-martin.herokuapp.com/)
 
-## Gitpod Reminders
+## Table Of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. [Project Goals](#project-goals)
+    1. [Creator Goals](#creator-goals)
+    2. [Player Goals](#player-goals)
+2. [Game Info](#game-info)
+    1. [Game Story](#game-story)
+    2. [Game Basics](#game-basics)
+    3. [Flow Chart](#flow-chart)
+3. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requirements-and-expectations)
+    3. [User Stories](#user-stories)
+4. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colour)
+5. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks and Tools](#frameworks-and-tools)
+6. [Features](#features)
+7. [Testing](#validation)
+    1. [Python Validation](#PYTHON-validation)
+    2. [Bugs](#Bugs)
+8. [Deployment](#deplyment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
 
-`python3 -m http.server`
+## Project Goals
 
-A blue button should appear to click: _Make Public_,
+### Creator Goals
+- Build a python project
+- Create a game about taking over a town
+- Allow user to input name and make selections based on story questions
+- Give user a chance to complete game under certain conditions
+- Display relevant info to user at correct time
+- Two main battle types - Auto and Reaction time
+- Final battle with change to Reaction time battle
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### Player Goals
+- Read story and options
+- Enter name
+- View foe info
+- Make selections
+- View current health
+- Respond to reaction time battles
+- Chance to defeat final boss
+- Retry game after defeat
 
-A blue button should appear to click: _Make Public_,
+## Game Info
 
-Another blue button should appear to click: _Open Browser_.
+### Game story
+- You are a born survivor and a seasoned warrior. Weary of seeing the corrupt politians and greedy landowners thrive on the back of your blood and sweat.
+- No longer willing to take orders for pitiful payouts
+- Its time to put your skills and charisma to the test and seat yourself at the top of the table.
+- Determined to crush anyone that dares to stand in your way
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Game Basics
+- User will see the intro screen with game name and then read short story intro
+- User will then be giving a choice of two options (Decision Branch 1)
+- One option will lead to an automatic battle against 3 foes
+- The other option will lead to a reaction time battle. In this case, the user will need to press the Enter key when the word GO appears and hope their reaction time is faster than that set for foe
+- User will lose health for each hit they take
+- If health goes below zero at any stage of game, it will be game over. 
+- User will then be giving a choice of two options (Decision Branch 2)
+- This will run similar to options in first decision branch
+- User will then be giving a choice of two options (Decision Branch 3)
+- This will run similar to options in first decision branch except there is no reaction time battle
+- User will then face a final battle. 
+- This final battle is based on reaction time battle but user will have to count to seven seconds in their head after the trigger word and only then press enter. 
+- Game will auto restart after it ends
 
-To log into the Heroku toolbelt CLI:
+### Flow Chart
+![flow chart image](images/flowchart.jpg)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Experience
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Target Audience
+The website is designed with the following target audience in mind:
+- Project assessor
+- Student peers
+- People with an interest in python
+- People who enjoy games
+- People with a interest in adventure games
+- People fed up with landlords
 
-------
+### User Requirements and Expectations
+- Straight forward, easy to use interface
+- Time to read and make selections
+- Clear target to complete the game
+- Retry game
 
-## Release History
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Player
+1. As a player, I want to start the game
+2. As a player, I want to understand what the game is about
+3. As a player, I want to be able to enter my name
+4. As a player, i want to know how much health I have left
+7. As a player, I want to receive acknowledment if i complete the game
+8. As a player, I want to be able to play the game without any bugs
 
-**April 26 2024:** Update node version to 16
+#### Creator
+13. As the creator, I want showcase my abilities with python
+14. As the creator, I want users to enjoy the game and have a interest in completing it
+15. As the creator, I want users to be surprised by some of the game features
+16. As the creator, I want the game to be bug free and capture/handle any likely user input errors
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Design
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Design Choices
+The website was designed to be displayed with a custom/CI made python enviroemt that mimics a website.
+pyfiglet and colorama were used to style and format the text
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Colour
+Basic colours were chosen from those available through https://pypi.org/project/colorama/
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Technologies Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Languages
+The following languages were used to develop the website:
+- Python
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Frameworks and Tools
+The following frameworks and tools were used to develop the website:
+- Heroku
+- Gitpod
+- Google Sheets
+- Colorama
+- Pyfiglet
+- Miro
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Data stored and taken from Google Sheets
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![image](images/sheet.jpg)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Title
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![image](images/title.jpg)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Made with Colorama and Pyfiglet
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+### Player Name and Stats
 
-## FAQ about the uptime script
+![image](images/name_stats.jpg)
 
-**Why have you added this script?**
+- Allows user enter their name
+- Displays current stats
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Player Choices
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![image](images/option.jpg)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- Gives users two options
+- Both will lead to a battle but one to reaction time and the other to auto
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+### Auto Battle
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![image](images/auto_battle.jpg)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Player will battle three foes one after the other.
+- This battle will run automatically with no user input needed
+- Player health and attack and foe status will show as it loops through attacks
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+### Reaction Battle
 
-Happy coding!
+![image](images/reaction_time_battle.jpg)
+
+- User to hit Enter key as soon as trigger word appears on screen
+- User will be prompted to prepare for this battle
+- There will then be a randon delay (between 2 and 5 seconds) before the trigger word appears on screen and reaction timer begins
+- Each foe has a differenct reaction time assigned to them
+- Final battle adds a level of difficulty to this by telling the user to wait for 7 seconds AFTER the trigger word appears on screen before hitting ENTER
+- Target to win this battle (and clear game) is to press enter between 6.5 to 7.5 seconds after trigger word
+
+
+
+### Error Handling
+
+![image](images/error-handling.jpg)
+
+
+
+
+### Game Over
+
+![image](images/game_over.jpg)
+
+- Made with Colorama and Pyfiglet
+
+
+
+## Testing
+
+### CI Python Linter
+
+- Passed through https://pep8ci.herokuapp.com/
+- All clear, no errors found
+
+### Bugs
+
+- Bug: When adding pyfiglet and colorama
+- Fix: Rearrange order of inport statements at top of run.py
+
+- Bug: In deployed site after adding pyfiglet and colorama
+- Fix: Add names and versions to requirements.txt
+
+- Bug: Using Character class out of scope
+- Fix: Pass data through arguments in functions
+
+## Deployment
+- Code placed in the `run.py` file
+- Dependencies placed in the `requirements.txt` file
+
+## Creating the Heroku app
+
+Followed instructions from Code Institute:
+- Add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- 1. `heroku/python`
+- 2. `heroku/nodejs`
+- Create a _Config Var_ called `PORT`. Set this to `8000`
+- For credentials, create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- Connect  GitHub repository and deploy
+- The deployment terminal is set to 80 columns by 24 rows.
+
+- Part 1 - https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/
+- Part 2 - https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/
+
+
+### Code
+
+- Validation code based on: https://www.youtube.com/watch?v=LUWyA3m_-r0
+
+### Next steps
+- Move all string\text to excel sheet "text"
+
+## Acknowledgements
+
+Thanks to all the below:
+- Classmates who are always on halnd to help out
+- Slack community
+- Course facilitator (Paul Thomas)
