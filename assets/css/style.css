@@ -266,7 +266,7 @@ footer {
 
 
     #index-image {
-        content: url("/assets/images/desktop-tarot.jpeg");
+        content: url("../images/desktop-tarot.jpeg");
         max-height: 900px;
     }
 
@@ -297,7 +297,7 @@ footer {
     }
     
       #index-image {
-        content: url("/assets/images/tablet-tarot.jpeg");
+        content: url("../images/tablet-tarot.jpeg");
     }
 
 }
