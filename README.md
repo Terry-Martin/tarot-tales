@@ -4,7 +4,7 @@
 (Developer: Terry Martin)
 
 
-[Live webpage](https://takeover-terry-martin.herokuapp.com/)
+[Live webpage](terry-martin.github.io/tarot-tales/)
 
 ## Table Of Contents
 
