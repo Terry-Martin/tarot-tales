@@ -98,7 +98,7 @@ main {
     height: auto;
 }
 
-.welcome-message p {
+.welcome-message p, h3 {
     font-family: 'Lato', sans-serif;
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
