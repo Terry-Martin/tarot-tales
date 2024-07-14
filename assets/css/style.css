@@ -142,7 +142,6 @@ main {
 
 /* Cards page */
 #card-images img {
-    /* width: 100%; */
     line-height: 1em;
     max-width: 150px;
     padding-right: 10px;
@@ -154,24 +153,14 @@ main {
     line-height: 0;
 }
 
-
 /* Booking page */
-
-/* 
-#booking-form {
-    background-image: url("/assets/images/booking-background.jpeg");
-    background-color: #cccccc;
-
-} */
 
 .elem-group {
     width: 300px;
     margin: 0 auto;
     padding: 5px;
     padding-left: 15px;
-
 }
-
 
 div.elem-group {
     margin: 20px 0;
@@ -233,9 +222,8 @@ button:hover {
     border: 2px solid black;
 }
 
-
-
 /* footer Area */
+
 footer {
     background-color: rgb(204, 221, 236);
 }
@@ -290,23 +278,17 @@ footer {
     }
     
       #index-image {
-        /* content: url("../images/tablet-tarot.jpeg"); */
         content: url("../images/tarot-large.webp");
     }
-
 }
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
 
-
     #index-image {
-        /* content: url("../images/desktop-tarot.jpeg"); */
         content: url("../images/tarot-large.webp");
         max-height: 900px;
     }
-
-
 
 }
 
