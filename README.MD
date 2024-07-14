@@ -1,18 +1,19 @@
 # Tarot Tales
+(adapted from Love Running tutorial readme)
 
-This site is designed to get users an overview of the services provided by Tarot Tales.We offer both in person and online readings with experienced and friendly staff members. There is a bookings page to contact us directly and make an appointment
+
+This site is designed to give users an overview of the services provided by Tarot Tales. We offer both in person and online readings with experienced and friendly staff members. There is a bookings page to contact us directly and make an appointment
 
   - ![Responsive pic](assets/images/readme/responsive.jpg)
 
-## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+## Features 
 
 ### Existing Features
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+  - Featured on all three pages, the full responsive navigation bar includes links to the Home page, Tarot Cards page and Booking page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
 ![Nav Bar](assets/images/readme/tarot-top-menu.jpg)
@@ -20,50 +21,40 @@ In this section, you should go over the different parts of your project, and des
 
 - __Weclcome Message__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on the index/home page, this is the first info that will draw the eye of the user. It gives a short description of the site and tarot cards, themselves
 
 ![Welcome message](assets/images/readme/tarot-welcome.jpg)
 
 - __Services Provided__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on the index/home page, this sets out the services on offer, the types of readings and the price.
 
 ![Services provided](assets/images/readme/tarot-services.jpg)
 
 
 - __Tarot Cards__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on the Cards page, the first 10 cards of the major Arcana are displayed as pics - starting with The Fool.
 
 ![Tarot cards](assets/images/readme/tarot-cards.jpg)
 
 - __Booking Form__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on the Booking page, users can submit a form to request a booking. Name, Email, Phone, Date, Time and Reading Type information is captured here. There is also a text area to allow the user to supply any other information that they think is relevant.
 
-![Footer](assets/images/readme/tarot-footer-menu.jpg)
+![Booking Form](assets/images/readme/tarot-booking.jpg)
 
 
 - __Footer__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on all three pages, the footer includes links and logos to four social media platforms - YouTube, X, Facebook and TikTok.
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Footer with Social Media Links](assets/images/readme/tarot-footer-menu.jpg)
 
-
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
-- Another feature idea
+- Some of the next features to add would include testimonial videos from existing users and more interactive booking system to display availability of each reader.
 
 ## Testing 
 
