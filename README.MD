@@ -6,8 +6,12 @@ This site is designed to give users an overview of the services provided by Taro
 
   - ![Responsive pic](assets/images/readme/responsive.jpg)
 
+## Design
 
-## Features 
+
+
+
+## Features
 
 ### Existing Features
 
@@ -54,17 +58,20 @@ This site is designed to give users an overview of the services provided by Taro
 
 ### Features Left to Implement
 
-- Some of the next features to add would include testimonial videos from existing users and more interactive booking system to display availability of each reader.
+- Some of the next features to add would include testimonial videos from existing customers and more interactive booking system to display availability of each reader.
+
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+- All the links in the nav bar work correctly from each page of the site. 
+- The social media links in the footer open to the correct page and in seperate browser.
+- For the bookings page, validation is in place after the user presses the "Book a Reading" button to check that al required fields are populated and in the correct format (in the case of Email). A prompt is displayed to to user next to the field that needs attention.
+- As this website is a course project, the user information is saved to any database but a Code Institute confirmation page is displayed to confirm the user info was captured. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Media Queries are used to display on different screen sizes. Different back ground image is used for mobile than tablet or above. Also, the burger menu is used for mobile view with standard nav bar used for other screens. These were tested using the Responsive feature within Chrome DevTools.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Last minute bugs that delayed submission were incorrect paths for image files (for both the site itself and for ReadMe file).
+The quality of images on large screens was another issued that needed to be corrected. 
 
 
 ### Validator Testing 
