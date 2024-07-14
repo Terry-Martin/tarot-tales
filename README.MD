@@ -70,6 +70,9 @@ This site is designed to give users an overview of the services provided by Taro
 
 Media Queries are used to display on different screen sizes. Different back ground image is used for mobile than tablet or above. Also, the burger menu is used for mobile view with standard nav bar used for other screens. These were tested using the Responsive feature within Chrome DevTools.
 
+Section tags need to have a H2 to H6 tag inside them. This was highlight in HTMl Validator.
+
+
 Last minute bugs that delayed submission were incorrect paths for image files (for both the site itself and for ReadMe file).
 The quality of images on large screens was another issued that needed to be corrected. 
 
