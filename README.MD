@@ -24,7 +24,7 @@ Booking page for users to submit an appointment
 
 ### Accessibility
 
-Accessibility score checked with Lighthouse within GoodGoogle DevTools.
+Accessibility score checked with Lighthouse within Google DevTools.
 
   - ![Lighthouse Scores](assets/images/readme/tarot-lighthouse.jpg)
 
@@ -39,7 +39,7 @@ Accessibility score checked with Lighthouse within GoodGoogle DevTools.
 
 ![Nav Bar](assets/images/readme/tarot-top-menu.jpg)
 
-- __Weclcome Message__
+- __Welcome Message__
 
   - Featured on the index/home page, this is the first info that will draw the eye of the user. It gives a short description of the site and tarot cards, themselves
 
@@ -76,13 +76,13 @@ Accessibility score checked with Lighthouse within GoodGoogle DevTools.
 ## Testing 
 
 - All the links in the nav bar work correctly from each page of the site. 
-- The social media links in the footer open to the correct page and in seperate browser.
+- The social media links in the footer open to the correct page and in separate browser.
 - For the bookings page, validation is in place after the user presses the "Book a Reading" button to check that al required fields are populated and in the correct format (in the case of Email). A prompt is displayed to to user next to the field that needs attention.
 - As this website is a course project, the user information is saved to any database but a Code Institute confirmation page is displayed to confirm the user info was captured. 
 
 Media Queries are used to display on different screen sizes. Different back ground image is used for mobile than tablet or above. Also, the burger menu is used for mobile view with standard nav bar used for other screens. These were tested using the Responsive feature within Chrome DevTools.
 
-Section tags need to have a H2 to H6 tag inside them. This was highlight in HTMl Validator.
+Section tags need to have a H2 to H6 tag inside them. This was highlight in HTML Validator.
 
 
 Last minute bugs that delayed submission were incorrect paths for image files (for both the site itself and for ReadMe file).
