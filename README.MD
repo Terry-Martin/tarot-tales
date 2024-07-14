@@ -22,6 +22,12 @@ Cards page to display 10 Tarot Cards
 Booking page for users to submit an appointment
   - ![Index wireframe](assets/images/readme/readme-booking.jpg)
 
+### Accessibility
+
+Accessibility score checked with Lighthouse within GoodGoogle DevTools.
+
+  - ![Lighthouse Scores](assets/images/readme/tarot-lighthouse.jpg)
+
 ## Features
 
 ### Existing Features
