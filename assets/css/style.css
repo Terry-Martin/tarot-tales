@@ -147,6 +147,7 @@ main {
     max-width: 150px;
     padding-right: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 #card-images {
@@ -264,18 +265,6 @@ footer {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-
-
-    #index-image {
-        /* content: url("../images/desktop-tarot.jpeg"); */
-        content: url("../images/tarot-large.webp");
-        max-height: 900px;
-    }
-
-}
-
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 
@@ -306,3 +295,18 @@ footer {
     }
 
 }
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+
+    #index-image {
+        /* content: url("../images/desktop-tarot.jpeg"); */
+        content: url("../images/tarot-large.webp");
+        max-height: 900px;
+    }
+
+
+
+}
+
